@@ -14,3 +14,4 @@ def virtualenvironment(c, update=False):
         c.run("pip-compile requirements.in", pty=True)
 
     c.run("pip install -r requirements.txt --no-cache-dir", pty=True)
+
