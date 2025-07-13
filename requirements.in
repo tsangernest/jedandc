@@ -1,0 +1,11 @@
+django
+django-filter
+django-cors-headers
+
+
+# dev
+black
+invoke
+isort
+pdbpp
+pytest-django
