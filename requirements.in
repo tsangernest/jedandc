@@ -8,6 +8,7 @@ pymupdf
 django
 django-filter
 django-cors-headers
+djoser
 
 
 # dev
