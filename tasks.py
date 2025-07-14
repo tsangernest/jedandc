@@ -23,7 +23,7 @@ def startapp(c, build=True):
         c.run("docker compose build", pty=True)
 
     c.run("docker compose up", pty=True)
-    print(f"\n***\nGo to port:8000 for djang-web-app\n***\n")
+    print(f"\n***\nGo to port:8000 for django-web-app\n***\n")
 
 
 @task
