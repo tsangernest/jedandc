@@ -15,3 +15,26 @@ def virtualenvironment(c, update=False):
 
     c.run("pip install -r requirements.txt --no-cache-dir", pty=True)
 
+
+@task
+def startapp(c, build=True):
+    if build:
+        c.run("docker compose down", pty=True)
+        c.run("docker compose build", pty=True)
+
+    c.run("docker compose up", pty=True)
+    print(f"\n***\nGo to port:8000 for djang-web-app\n***\n")
+
+
+@task
+def exec(c, container="django"):
+    print(f"\n***\nJumping into django\n***\n")
+    c.run(f"docker exec -it {container} /bin/bash", pty=True)
+
+
+@task
+def down(c):
+    print(f"\n***\nDestroying Containers\n***\n")
+    c.run("docker compose down", pty=True)
+    c.run("docker system prune -a -f", pty=True)
+
