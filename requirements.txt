@@ -82,13 +82,16 @@ ollama==0.5.1
 packaging==25.0
     # via
     #   black
+    #   pytesseract
     #   pytest
 pathspec==0.12.1
     # via black
 pdbpp==0.11.6
     # via -r requirements.in
 pillow==11.3.0
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   pytesseract
 platformdirs==4.3.8
     # via black
 pluggy==1.6.0
@@ -109,9 +112,15 @@ pyjwt==2.9.0
     #   social-auth-core
 pymupdf==1.26.3
     # via -r requirements.in
+pytesseract==0.3.13
+    # via -r requirements.in
 pytest==8.4.1
-    # via pytest-django
+    # via
+    #   pytest-django
+    #   pytest-repeat
 pytest-django==4.11.1
+    # via -r requirements.in
+pytest-repeat==0.9.4
     # via -r requirements.in
 python3-openid==3.2.0
     # via social-auth-core
