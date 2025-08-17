@@ -1,7 +1,7 @@
 # core
 ollama
 pillow
-ironpdf
+pymupdf
 pytesseract
 
 

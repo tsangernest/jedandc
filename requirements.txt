@@ -20,15 +20,11 @@ certifi==2025.7.9
     #   httpx
     #   requests
 cffi==1.17.1
-    # via
-    #   clr-loader
-    #   cryptography
+    # via cryptography
 charset-normalizer==3.4.2
     # via requests
 click==8.2.1
     # via black
-clr-loader==0.2.7.post0
-    # via pythonnet
 cryptography==45.0.5
     # via social-auth-core
 defusedxml==0.7.1
@@ -73,8 +69,6 @@ iniconfig==2.1.0
     # via pytest
 invoke==2.2.0
     # via -r requirements.in
-ironpdf==2025.8.1.8
-    # via -r requirements.in
 isort==6.0.1
     # via -r requirements.in
 mypy-extensions==1.1.0
@@ -116,6 +110,8 @@ pyjwt==2.9.0
     # via
     #   djangorestframework-simplejwt
     #   social-auth-core
+pymupdf==1.26.3
+    # via -r requirements.in
 pytesseract==0.3.13
     # via -r requirements.in
 pytest==8.4.1
@@ -128,8 +124,6 @@ pytest-repeat==0.9.4
     # via -r requirements.in
 python3-openid==3.2.0
     # via social-auth-core
-pythonnet==3.0.5
-    # via ironpdf
 requests==2.32.4
     # via
     #   requests-oauthlib
